@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10sp"
+        >
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/iv_auto_image_slider"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:riv_border_color="#F6F6F6"
+            app:riv_border_width="2dip"
+            app:riv_corner_radius="10dip"
+            app:riv_mutate_background="true"
+            app:riv_oval="false"
+            app:riv_tile_mode="repeat" />
+
+        <FrameLayout
+            android:id="@+id/fl_shadow_container"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:visibility="visible"
+            android:alpha=".7"
+            android:background="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10sp"
+                android:weightSum="3"
+                >
+                <TextView
+                    android:id="@+id/tv_auto_image_slider"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textStyle="bold"
+                    android:text="AED 300 /-"
+                    android:layout_weight="1"
+                    android:paddingLeft="10sp"
+                    android:layout_gravity="bottom"
+                    android:gravity="bottom"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+                <TextView
+                    android:id="@+id/tv_original"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textStyle="bold"
+                    android:text="AED 600 /-"
+                    android:layout_weight="1"
+                    android:paddingLeft="10sp"
+                    android:layout_gravity="bottom"
+                    android:gravity="bottom|center"
+                    android:textColor="@color/grey"
+                    android:textSize="20sp" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginRight="5sp"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginBottom="5sp"
+                    android:background="@drawable/bg_orange_offer"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="50% Off"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="19sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+
+
+        </FrameLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <ImageView
+        android:id="@+id/iv_gif_container"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="bottom|start"
+        android:layout_margin="50dp" />
+
+
+
+</FrameLayout>

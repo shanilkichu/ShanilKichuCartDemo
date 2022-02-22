@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">ShanilKichu</string>
+    <string name="search">Search</string>
+    <string name="best_practice_definition_meaning"><![CDATA[Best Practice Definition & Meaning]]></string>
+    <string name="top_title"># TOP TITLE</string>
+    <string name="best_title"># BEST TITLE</string>
+    <string name="shop">SHOP</string>
+    <string name="shop_by_category"># SHOP BY CATEGORY</string>
+    <string name="sub_category">Sub Category</string>
+    <string name="term_of_use">TERM OF USE</string>
+    <string name="contact">CONTACT</string>
+    <string name="career">CAREER</string>
+    <string name="area_range">AREA RANGE</string>
+    <string name="project_by_ezeness_technology">PROJECT BY EZENESS TECHNOLOGY</string>
+    <string name="u_nu">U\nU</string>
+    <string name="sell_np">Sell\nP</string>
+</resources>
