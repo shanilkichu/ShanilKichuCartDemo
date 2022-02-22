@@ -288,7 +288,7 @@
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <TextView
-                    android:id="@+id/txtAppName"
+                    android:id="@+id/txtAppfrstname"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10sp"
@@ -302,7 +302,7 @@
                     app:layout_constraintTop_toBottomOf="@+id/constraintLayout5" />
 
                 <TextView
-                    android:id="@+id/txtAppName2"
+                    android:id="@+id/txtAppsecondname"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-smallcaps"
@@ -311,8 +311,8 @@
                     android:textSize="30sp"
                     android:layout_marginTop="10sp"
                     android:textStyle="bold"
-                    app:layout_constraintStart_toEndOf="@+id/txtAppName"
-                    app:layout_constraintTop_toTopOf="@+id/txtAppName" />
+                    app:layout_constraintStart_toEndOf="@+id/txtAppfrstname"
+                    app:layout_constraintTop_toTopOf="@+id/txtAppfrstname" />
 
                 <androidx.constraintlayout.widget.Guideline
                     android:id="@+id/guideline5"
@@ -329,10 +329,10 @@
                     android:textSize="17sp"
                     android:layout_marginEnd="10sp"
                     android:textColor="@color/grey"
-                    app:layout_constraintBottom_toBottomOf="@+id/txtAppName"
+                    app:layout_constraintBottom_toBottomOf="@+id/txtAppfrstname"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="@+id/guideline5"
-                    app:layout_constraintTop_toTopOf="@+id/txtAppName" />
+                    app:layout_constraintTop_toTopOf="@+id/txtAppfrstname" />
 
                 <View
                     android:id="@+id/view"
@@ -342,7 +342,7 @@
                     android:background="#FBFBFB"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/txtAppName" />
+                    app:layout_constraintTop_toBottomOf="@+id/txtAppfrstname" />
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"

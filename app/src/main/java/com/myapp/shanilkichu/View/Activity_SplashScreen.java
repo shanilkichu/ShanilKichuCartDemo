@@ -33,10 +33,11 @@ public class Activity_SplashScreen extends AppCompatActivity {
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
+                Intent in=new Intent(Activity_SplashScreen.this,Activity_Home.class);
+                in.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                in.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                startActivity(in);
                 finish();
-                startActivity(new Intent(activity,Activity_Home.class)
-                .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
-                );
                 overridePendingTransition(R.anim.slide_in_right, R.anim.anim_nothing);
 
             }
